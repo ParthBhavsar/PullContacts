@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT CONTACT"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInput_ContactName"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Contact Name"
+        app:hintTextAppearance="@style/EditTextHint"
+        >
+
+        <EditText
+            android:id="@+id/editText_ContactName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_InvalidName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Name"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"/>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInput_ContactNumber"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Contact Number"
+        app:hintTextAppearance="@style/EditTextHint"
+        >
+
+        <EditText
+            android:id="@+id/editText_ContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_InvalidNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invalid Number"
+        android:layout_marginLeft="33dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        >
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Canel"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="OK"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PullContacts</string>
+
+
+    <string name="delete">DELETE</string>
+    <string name="edit">EDIT</string>
+    <string name="swipeRight">Swipe Right</string>
+    <string name="swipeLeft">Swipe Left</string>
+
+</resources>
